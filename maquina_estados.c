@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main(){
     int s = 1;
 
@@ -14,6 +13,7 @@ int main(){
     while (1){
         switch (s){
             case 1:
+            // tenho R$ 0
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -27,6 +27,7 @@ int main(){
 
 
             case 2:
+            // tenho R$ 0,50
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -40,6 +41,7 @@ int main(){
 
 
             case 3:
+            // tenho R$ 1
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -55,6 +57,7 @@ int main(){
 
 
             case 4:
+            // tenho R$ 1,50
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -70,6 +73,7 @@ int main(){
 
 
             case 5:
+            // tenho R$ 2
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -86,6 +90,7 @@ int main(){
 
 
             case 6:
+            // tenho R$ 2,50
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -101,6 +106,7 @@ int main(){
 
 
             case 7:
+            // tenho R$ 3
                 switch (getchar()){
                     case 'F': s = 8; break;
 
@@ -115,7 +121,7 @@ int main(){
 
 
             case 8:
-                // FIM
+            // FIM
                 exit(0);
                 break;
         
