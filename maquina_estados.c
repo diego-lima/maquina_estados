@@ -134,10 +134,8 @@ int main(){
 
             case 8:
             // FIM
+                printf("Máquina desligada.\n");
                 exit(0);
-                break;
-        
-            default:
                 break;
 
             /**
@@ -147,6 +145,119 @@ int main(){
              * SÓ TÊM 2 DÍGITOS:
              * 12, 13, 14, 23, 34, 45, 56, 67
              */
+
+            case 12:
+            // tenho R$ 0 ou R$ 0,50
+                printf("saldo: R$ 0|0,50\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 23; break;
+                    case '1': s = 34; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 13:
+            // tenho R$ 0 ou R$ 1
+                printf("saldo: R$ 0|1\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 24; break;
+                    case '1': s = 35; break;
+
+                    case 'A': printf("agua!\n"); s = 12; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 23:
+            // tenho R$ 0,50 ou R$ 1
+                printf("saldo: R$ 0|1\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 34; break;
+                    case '1': s = 45; break;
+
+                    case 'A': printf("agua!\n"); s = 12; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 34:
+            // tenho R$ 1 ou R$ 1,50
+                printf("saldo: R$ 1|1,50\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 45; break;
+                    case '1': s = 56; break;
+
+                    case 'A': printf("agua!\n"); s = 12; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 45:
+            // tenho R$ 1,50 ou R$ 2
+                printf("saldo: R$ 1,50|2\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 56; break;
+                    case '1': s = 67; break;
+
+                    case 'A': printf("agua!\n"); s = 23; break;
+                    case 'P': printf("refri!\n"); s = 13; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 56:
+            // tenho R$ 2 ou R$ 2,50
+                printf("saldo: R$ 2|2,50\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 67; break;
+                    case '1': s = 7; break;
+
+                    case 'A': printf("agua!\n"); s = 34; break;
+                    case 'P': printf("refri!\n"); s = 132; break;
+
+                    default: break;
+                }
+                
+                break;
+
+            case 67:
+            // tenho R$ 2,50 ou R$ 3
+                printf("saldo: R$ 2,50|3\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 7; break;
+
+                    case 'A': printf("agua!\n"); s = 45; break;
+                    case 'P': printf("refri!\n"); s = 23; break;
+                    case 'I': printf("isotonico!\n"); s = 14; break;
+
+                    default: break;
+                }
+                
+                break;
 
             /**
              * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS DE TRÊS DÍGITOS EM PRETO
@@ -171,6 +282,10 @@ int main(){
              * DA FOTO:
              * 124, 235, 346, 457
              */
+
+
+            default:
+                break;
         }
     }
 
