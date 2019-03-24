@@ -176,6 +176,22 @@ int main(){
                 
                 break;
 
+            case 14:
+            // tenho R$ 0 ou R$ 1,50
+                printf("saldo: R$ 0|1,50\n");
+                switch (getchar()){
+                    case 'F': s = 8; break;
+                    
+                    case '5': s = 25; break;
+                    case '1': s = 36; break;
+
+                    case 'A': printf("agua!\n"); s = 2; break; // @= é 2 mesmo?
+
+                    default: break;
+                }
+                
+                break;
+
             case 23:
             // tenho R$ 0,50 ou R$ 1
                 printf("saldo: R$ 0|1\n");
@@ -248,7 +264,7 @@ int main(){
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
-                    case '5': s = 7; break;
+                    case '5': s = 7; break; // @= é 7 mesmo? e se eu tivesse R$ 3?
 
                     case 'A': printf("agua!\n"); s = 45; break;
                     case 'P': printf("refri!\n"); s = 23; break;
