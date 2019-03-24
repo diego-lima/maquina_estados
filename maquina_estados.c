@@ -12,6 +12,11 @@ int main(){
 
     while (1){
         switch (s){
+            /**
+             * CORPO PRINCIPAL
+             * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS
+             * DO 1 AO 8!
+             * */
             case 1:
             // tenho R$ 0
                 switch (getchar()){
@@ -48,7 +53,7 @@ int main(){
                     case '5': s = 4; break;
                     case '1': s = 5; break;
 
-                    case 'A': printf("agua!\n"); s = 1; break;
+                    case 'A': printf("agua!\n"); s = 12; break;
 
                     default: break;
                 }
@@ -81,7 +86,7 @@ int main(){
                     case '1': s = 7; break;
 
                     case 'A': printf("agua!\n"); s = 3; break;
-                    case 'P': printf("refri!\n"); s = 1; break;
+                    case 'P': printf("refri!\n"); s = 13; break;
 
                     default: break;
                 }
@@ -110,7 +115,7 @@ int main(){
                 switch (getchar()){
                     case 'F': s = 8; break;
 
-                    case 'I': printf("isotonico!\n"); s = 1; break;
+                    case 'I': printf("isotonico!\n"); s = 14; break;
                     case 'A': printf("agua!\n"); s = 5; break;
                     case 'P': printf("refri!\n"); s = 3; break;
                 
@@ -127,6 +132,38 @@ int main(){
         
             default:
                 break;
+
+            /**
+             * NO PEDAÇO ABAIXO, TEMOS OS PRIMEIROS ESTADOS
+             * QUE SURGIRAM DA CONVERSÃO PARA NÃO-DETERMINÍSTICO.
+             * SÃO OS ESTADOS DESENHADOS EM PRETO NA FOTO, QUE
+             * SÓ TÊM 2 DÍGITOS:
+             * 12, 13, 14, 23, 34, 45, 56, 67
+             */
+
+            /**
+             * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS DE TRÊS DÍGITOS EM PRETO
+             * DA FOTO:
+             * 132, 234, 345, 567, 456
+             */
+
+            /**
+             * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS DE DOIS DÍGITOS EM VERMELHO
+             * DA FOTO:
+             * 24, 35, 46, 57
+             */
+
+            /**
+             * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS DE DOIS DÍGITOS EM AZUL
+             * DA FOTO:
+             * 25, 36, 47
+             */
+
+            /**
+             * NO PEDAÇO ABAIXO, TEMOS OS ESTADOS DE TRÊS DÍGITOS EM AZUL
+             * DA FOTO:
+             * 124, 235, 346, 457
+             */
         }
     }
 
