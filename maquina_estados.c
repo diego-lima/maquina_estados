@@ -19,6 +19,7 @@ int main(){
              * */
             case 1:
             // tenho R$ 0
+                printf("saldo: R$ 0\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -33,6 +34,7 @@ int main(){
 
             case 2:
             // tenho R$ 0,50
+                printf("saldo: R$ 0,50\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -47,6 +49,7 @@ int main(){
 
             case 3:
             // tenho R$ 1
+                printf("saldo: R$ 1\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -63,6 +66,7 @@ int main(){
 
             case 4:
             // tenho R$ 1,50
+                printf("saldo: R$ 1,50\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -79,6 +83,7 @@ int main(){
 
             case 5:
             // tenho R$ 2
+                printf("saldo: R$ 2\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -96,6 +101,7 @@ int main(){
 
             case 6:
             // tenho R$ 2,50
+                printf("saldo: R$ 2,50\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
                     
@@ -112,12 +118,13 @@ int main(){
 
             case 7:
             // tenho R$ 3
+            printf("saldo: R$ 3\n");
                 switch (getchar()){
                     case 'F': s = 8; break;
 
-                    case 'I': printf("isotonico!\n"); s = 14; break;
                     case 'A': printf("agua!\n"); s = 5; break;
                     case 'P': printf("refri!\n"); s = 3; break;
+                    case 'I': printf("isotonico!\n"); s = 14; break;
                 
                     default: break;
                 }
