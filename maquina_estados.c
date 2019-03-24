@@ -6,8 +6,12 @@ int main(){
 
     /**
      * COMANDOS
-     * '5' = R$ 0,50
-     * '1' = R$ 1,00
+     * 'F' = finalizar tudo
+     * '5' = inserir R$ 0,50
+     * '1' = inserir R$ 1,00
+     * 'A' = pedir água
+     * 'P' = pedir refrigerante
+     * 'I' = pedir isotônico
      */
 
     while (1){
