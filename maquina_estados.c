@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+void main(){
     int s = 1;
 
     /**
@@ -577,6 +577,4 @@ int main(){
                 break;
         }
     }
-
-    return 0;
 }
