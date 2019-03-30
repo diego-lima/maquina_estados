@@ -488,10 +488,10 @@ int main(){
                     case 'F': s = 8; break;
                     
                     case '5': s = 5; break;
-                    case '1': s = 7; break; // @= não deveria ir pro 6?
+                    case '1': s = 6; break; 
 
-                    case 'A': printf("agua!\n"); s = 35; break; // @= não deveria ir pro 25?
-					case 'P': printf("refri!\n"); s = 13; break; // @= não deveria ir pro 3?
+                    case 'A': printf("agua!\n"); s = 25; break; 
+					case 'P': printf("refri!\n"); s = 3; break; 
 					case 'I': printf("isotonico!\n"); s = 14; break;
 					
                     default: break;
